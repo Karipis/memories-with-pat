@@ -8,27 +8,27 @@ var terrainLayer = L.tileLayer('https://api.maptiler.com/maps/basic-v2/{z}/{x}/{
 
 
 var RedheartIcon = L.icon({
-    iconUrl: 'icon.png',
+    iconUrl: './icons/icon.png',
     iconSize: [25, 25]
 });
 
 var BlueheartIcon = L.icon({
-    iconUrl: 'iconBlue.png',
+    iconUrl: './icons/iconBlue.png',
     iconSize: [25, 25]
 });
 
 var GreenheartIcon = L.icon({
-    iconUrl: 'iconGreen.png',
+    iconUrl: './icons/iconGreen.png',
     iconSize: [25, 25]
 });
 
 var YellowheartIcon = L.icon({
-    iconUrl: 'iconYellow.png',
+    iconUrl: './icons/iconYellow.png',
     iconSize: [25, 25]
 });
 
 var PinkheartIcon = L.icon({
-    iconUrl: 'iconPink.png',
+    iconUrl: './icons/iconPink.png',
     iconSize: [25, 25]
 });
 
