@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories:)</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/4d43554a1b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+    <div id="timer">
+        <p id="time"></p>
+        <button id="continue">Can't wait, take me there asap.</button>
+    </div>
+
+    <div id="note">
+        <p id="desc">I just want to tell you that I love you the most, here are some of our memories... I wanna create
+            many more with you. Happy 2 years anniversary and enjoy:)</p>
+        <button id="back">Take me back, I'll wait.</button>
+        <button id="continue2">I see, I love you too.</button>
+    </div>
+
+    <div id="options">
+        <h3>Our firsts and memories</h3>
+        <ul>
+            <li id="random">Random memory</li>
+            <li data-lat="50.064546423603595" data-lon="19.940803796023513" onclick="changeView(this)">Our first date
+            </li>
+            <li data-lat="50.06861067511593" data-lon="19.905313297425742" onclick="changeView(this)">Our first kiss
+            </li>
+            <li data-lat="50.06672863383658" data-lon="19.938786983932154" onclick="changeView(this)">Our second date
+            </li>
+            <li data-lat="50.06260977334228" data-lon="19.928790895322024" onclick="changeView(this)">First Sleepover
+            </li>
+            <li data-lat="50.0630102969585" data-lon="19.90340873912342" onclick="changeView(this)">First "I love you"
+            </li>
+            <li data-lat="51.10887903978614" data-lon="17.038468654509543" onclick="changeView(this)">First Trip
+                together</li>
+            <li data-lat="50.068452888038905" data-lon="19.904244997294548" onclick="changeView(this)">Our first concert
+            </li>
+            <li data-lat="50.05546212030457" data-lon="19.93214930681944" onclick="changeView(this)">Our First bicycle
+                ride</li>
+            <li data-lat="50.061941127548536" data-lon="19.90780470781268" onclick="changeView(this)">My first
+                rollerblade ride</li>
+            <li data-lat="50.061941127548536" data-lon="19.90780470781268" onclick="changeView(this)">Our First trip
+                abroad</li>
+            <li data-lat="50.061941127548536" data-lon="19.90780470781268" onclick="changeView(this)">Your First scooter
+                ride</li>
+            <li data-lat="50.061941127548536" data-lon="19.90780470781268" onclick="changeView(this)">Our(?) first
+                debate championship</li>
+            <li data-lat="50.061941127548536" data-lon="19.90780470781268" onclick="changeView(this)">Our(?) first
+                debate championship</li>
+            <li data-lat="50.061941127548536" data-lon="19.90780470781268" onclick="changeView(this)">Our(?) first
+                debate championship</li>
+        </ul>
+    </div>
+
+    <div id="map">
+        <p>Memory Map</p>
+    </div>
+
+    <button id="music"><i class="fa-solid fa-volume-low"></i></button>
+
+    <script src="script.js"></script>
+    <script src="events.js"></script>
+
+</body>
+
+</html>
