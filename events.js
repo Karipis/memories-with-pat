@@ -7,6 +7,7 @@ let note = document.getElementById('note');
 const sound = new Audio('./song.mp3');
 sound.loop = true; // Enable looping
 
+sound.volume = 0.05;
 let music = true;
 
 musicBtn.onclick = function () {
