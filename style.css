@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     /* Changed from 0 to border-box */
+    font-family: monospace;
 
 }
 
@@ -212,8 +213,10 @@ body {
     transform: scale(1.10);
 }
 
+
 .leaflet-popup-content {
     max-height: 350px;
+    
     /* Set a maximum height for the popup */
     overflow-y: auto;
     /* Enable vertical scrolling */

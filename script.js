@@ -152,6 +152,19 @@ let marker10 = L.marker([50.068452888038905, 19.904244997294548], {
 
 markersArray.push(marker10);
 
+let marker11 = L.marker([50.07078919954674, 19.936664050178887], {
+    icon: YellowheartIcon
+}).addTo(map).bindPopup(`
+    <p>This is where I had my first wow moment... When I realized you were special. We drunk ouzo and were singing for the whole night:)</p>
+    
+    <div>
+       
+    </div>
+`);
+
+
+markersArray.push(marker11);
+
 
 // <img src="./images/room.png" style="width: 250px; height: 250px; display: block; margin: auto;">
 
