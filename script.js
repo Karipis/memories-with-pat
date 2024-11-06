@@ -1,5 +1,9 @@
 // Initialize the map
-var map = L.map('map').setView([50.064546423603595, 19.940803796023513], 14);
+var map = L.map('map', {
+    center: [50.064546423603595, 19.940803796023513],
+    zoom: 14,
+    minZoom: 3, // Set the minimum zoom level
+});
 
 // Create a tile layer and add it to the map
 var terrainLayer = L.tileLayer('https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=cQFhX3jbbnedRQlL4bb1', {
@@ -50,7 +54,7 @@ let marker2 = L.marker([50.06861067511593, 19.905313297425742], {
 }).addTo(map).bindPopup(`
     <p>This is the place where we had our first kiss. It was also your first time drinking ouzo...</p>
     <div>
-       <img src="./images/socks.jpg" style="width: 250px; height: 250px; display: block; margin: auto;"> 
+       <img src="./images/socks.jpg" style="width: 100%; display: block; margin: auto;"> 
     </div>
 `);
 
@@ -61,7 +65,7 @@ let marker3 = L.marker([50.06672863383658, 19.938786983932154], {
 }).addTo(map).bindPopup(`
     <p>This was our second date?! It was all downhill from there... Can't get better than our bunny date...</p>
     <div>
-       <img src="./images/bunnies.png" style="width: 250px; height: 250px; display: block; margin: auto; margin-top: 10px;"> 
+       <img src="./images/bunnies.png" style="width: 100%; display: block; margin: auto; margin-top: 10px;"> 
 
     </div>
 `);
@@ -73,7 +77,7 @@ let marker4 = L.marker([50.05546212030457, 19.93214930681944], {
 }).addTo(map).bindPopup(`
     <p>This is where we did bicycle together:)</p>
     <div>
-       <img src="./images/bicycles.png" style="width: 250px;  display: block; margin: auto;"> 
+       <img src="./images/bicycles.png" style="width: 100%;  display: block; margin: auto;"> 
     </div>
 `);
 
@@ -96,8 +100,8 @@ let marker6 = L.marker([51.10887903978614, 17.038468654509543], {
 }).addTo(map).bindPopup(`
     <p>This was our first trip. I'll never forget this trip because it really brought us closer. (We have to go back there)</p>
     <div>
-        <img src="./images/wroclaw2.jpg" style="width: 250px; display: block; margin: auto;"> 
-        <img src="./images/wroclaw1.png" style="width: 250px; display: block; margin: auto; margin-top: 10px;">   
+        <img src="./images/wroclaw2.jpg" style="width: 100%; display: block; margin: auto;"> 
+        <img src="./images/wroclaw1.png" style="width: 100%; display: block; margin: auto; margin-top: 10px;">   
     </div>
 `);
 
@@ -108,7 +112,7 @@ let marker7 = L.marker([50.06260977334228, 19.928790895322024], {
 }).addTo(map).bindPopup(`
     <p>This was our first sleepover. No clue how we didn't get a fine... We watched After Life and we cuddled...</p>
     <div>
-       <img src="./images/room.png" style="width: 250px; display: block; margin: auto;">
+       <img src="./images/room.png" style="width: 100%; display: block; margin: auto;">
     </div>
 `);
 
