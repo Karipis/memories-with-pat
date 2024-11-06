@@ -84,9 +84,29 @@ body {
     }
 
     li {
-        font-size: 10px;
+        font-size: 9px;
         /* Smaller font size for phones */
 
+    }
+
+    #options {
+        width: 27%;
+    }
+
+    #map {
+        position: absolute;
+        /* Keep the map absolute */
+        top: 2%;
+        bottom: 2%;
+        z-index: 0;
+        /* Lower z-index for the map */
+        right: 2%;
+        width: 70%;
+        height: 90vh;
+        filter: grayscale(40%);
+        border-radius: 20px;
+        transition: all 1.5s ease;
+        box-shadow: 15px 15px 0px rgb(85, 85, 85);
     }
 }
 
@@ -178,7 +198,7 @@ body {
     border-radius: 10px;
 }
 
-/* Scrollbar thumb */
+
 #options::-webkit-scrollbar-thumb {
     background-color: #686868;
     /* Thumb color */
